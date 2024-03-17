@@ -1,5 +1,5 @@
 import React from 'react'
-import { useRef } from 'react'
+
 import ProfilePic from '../assets/1662218474293.jpg'
 
 function NavBar(props) {

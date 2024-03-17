@@ -19,10 +19,10 @@ function FooterSection() {
                         <div className='font-[700] text-[22px] leading-[33px] tracking-[1px]'>SOCIAL</div>
                         <div className='flex gap-5 text-blue-700 text-4xl'>
                             <div className='flex justify-center items-center cursor-pointer hover:bg-white duration-200 w-full h-full p-2'>
-                                <a href="https://www.linkedin.com/in/abhi-kumar-bb84851b1/" target='_blank'><i class='bx bxl-linkedin-square'></i></a>
+                                <a href="https://www.linkedin.com/in/abhi-kumar-bb84851b1/"><i class='bx bxl-linkedin-square'></i></a>
                             </div>
                             <div className='text-purple-700 text-4xl flex justify-center items-center cursor-pointer hover:bg-white duration-200 p-2'>
-                            <a href="https://github.com/abhistark007" target='_blank'><i class='bx bxl-github' ></i></a>
+                            <a href="https://github.com/abhistark007" ><i class='bx bxl-github' ></i></a>
                             </div>
                         </div>
                     </div>

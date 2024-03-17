@@ -13,7 +13,7 @@ function ProjectCard(props) {
             <div className='text-[#666666] leading-[30px] text-[18px]'>{props.des}</div>
 
             <div className='font-bold px-8 py-3 shadow-lg hover:translate-y-[-7px] cursor-pointer rounded-lg bg-[#7843E9] duration-300 text-white w-fit text-[15px] leading-[30px] uppercase tracking-[1px]'>
-                        <a href={props.link} target='_blank' className='no-underline'>Live Deploy Link</a>
+                        <a href={props.link} className='no-underline'>Live Deploy Link</a>
             </div>
         </div>
     </div>
