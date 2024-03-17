@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 import HeroSection from '../components/HeroSection'
 import AboutSection from '../components/AboutSection'
+import ProjectSection from '../components/ProjectSection'
 
 function HomePage() {
   return (
@@ -9,6 +10,7 @@ function HomePage() {
       <NavBar/>
       <HeroSection/>
       <AboutSection/>
+      <ProjectSection/>
     </div>
   )
 }
