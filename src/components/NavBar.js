@@ -1,9 +1,21 @@
 import React from 'react'
+import { useRef } from 'react'
 import ProfilePic from '../assets/1662218474293.jpg'
 
-function NavBar() {
+function NavBar(props) {
+
+    
+
+    const scrollToSection=(elementRef)=>{
+        window.scrollTo({
+            top: elementRef.current.offsetTop,
+            behavior: 'smooth'
+        })
+    }
+
+
   return (
-    <div className='w-full px-7 py-4 shadow-lg'>
+    <div className='fixed left-0 right-0 top-0 z-20 bg-white w-full px-7 py-4 shadow-lg'>
         <div className='flex font-["Source Sans 3"] justify-between items-center'>
             {/* Left */}
             <div className='flex items-center gap-4'>
@@ -15,10 +27,10 @@ function NavBar() {
 
             {/* Right */}
             <div className='flex font-[700]  text-[18px] leading-[27px] tracking-[1px] gap-10 select-none max-[700px]:hidden'>
-                <div className='hover:text-[#7843E9] duration-200 cursor-pointer'>HOME</div>
-                <div className='hover:text-[#7843E9] duration-200 cursor-pointer'>ABOUT</div>
-                <div className='hover:text-[#7843E9] duration-200 cursor-pointer'>PROJECT</div>
-                <div className='hover:text-[#7843E9] duration-200 cursor-pointer'>CONTACT</div>
+                <div onClick={()=>scrollToSection(props.home)} className='hover:text-[#7843E9] duration-200 cursor-pointer'>HOME</div>
+                <div onClick={()=>scrollToSection(props.about)} className='hover:text-[#7843E9] duration-200 cursor-pointer'>ABOUT</div>
+                <div onClick={()=>scrollToSection(props.projects)}  className='hover:text-[#7843E9] duration-200 cursor-pointer'>PROJECT</div>
+                <div onClick={()=>scrollToSection(props.contact)} className='hover:text-[#7843E9] duration-200 cursor-pointer'>CONTACT</div>
             </div>
 
             {/* Right on small screen */}

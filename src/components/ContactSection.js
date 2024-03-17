@@ -1,9 +1,9 @@
 import React from 'react'
 import bg from '../assets/commonbg.svg'
 
-function ContactSection() {
+function ContactSection(props) {
     return (
-        <div className='w-full bg-white flex font-["Source Sans 3"] pb-20  min-h-[85vh] bg-no-repeat bg-center pt-[10%]' style={{
+        <div ref={props.contact} className='w-full bg-white flex font-["Source Sans 3"] pb-20  min-h-[85vh] bg-no-repeat bg-center pt-[10%]' style={{
             backgroundImage: `url(${bg})`
         }}>
             <div className='flex flex-col  mx-auto items-center gap-5 w-[80%]'>

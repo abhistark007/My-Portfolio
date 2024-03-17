@@ -6,9 +6,9 @@ import rapp from '../assets/rapp.png'
 import rrl from '../assets/rrl.png'
 import cq from '../assets/cq.png'
 
-function ProjectSection() {
+function ProjectSection(props) {
   return (
-    <div className='w-full bg-white flex font-["Source Sans 3"] pb-20'>
+    <div ref={props.projects} className='w-full bg-white flex font-["Source Sans 3"] pb-20 pt-[80px]'>
         <div className='flex flex-col  mx-auto items-center gap-5 w-[80%]'>
             <div className='text-[40px] leading-[60px] tracking-[3px] font-[700]'>PROJECTS</div>
             <div className='w-[50px] h-[10px] rounded-lg bg-[#7843E9] '></div>

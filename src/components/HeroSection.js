@@ -3,9 +3,9 @@ import bg from '../assets/commonbg.svg'
 import LinkedIn from '../assets/Linkedin.svg'
 import Github from '../assets/Github.svg'
 
-function HeroSection() {
+function HeroSection(props) {
     return (
-        <div className='relative w-full min-h-[85vh] bg-no-repeat bg-center flex justify-center pt-[10%] font-["Source Sans 3"]' style={{
+        <div ref={props.home} className='relative w-full min-h-[85vh] bg-no-repeat bg-center flex justify-center pt-[10%] font-["Source Sans 3"]' style={{
             backgroundImage: `url(${bg})`
         }}>
             <div className='flex flex-col absolute left-0 top-[40%] bg-white z-10 shadow-lg p-1'>

@@ -1,9 +1,9 @@
 import React from 'react'
 import SkillCard from './SkillCard'
 
-function AboutSection() {
+function AboutSection(props) {
   return (
-    <div className='w-full bg-[#FAFAFA] flex font-["Source Sans 3"]'>
+    <div ref={props.about} className='w-full bg-[#FAFAFA] flex font-["Source Sans 3"] pt-[80px]'>
         <div className='flex flex-col  mx-auto items-center gap-5 w-[80%]'>
             <div className='text-[40px] leading-[60px] tracking-[3px] font-[700]'>ABOUT ME</div>
             <div className='w-[50px] h-[10px] rounded-lg bg-[#7843E9] '></div>
