@@ -11,10 +11,18 @@ function HomePage() {
     const about=useRef(null);
     const projects=useRef(null);
     const contact=useRef(null);
+
+    const scrollToSection=(elementRef)=>{
+      window.scrollTo({
+          top: elementRef.current.offsetTop,
+          behavior: 'smooth'
+      })
+  }
+
   return (
     <div className='relative flex flex-col w-full'>
-      <NavBar home={home} about={about} projects={projects} contact={contact}/>
-      <HeroSection home={home}/>
+      <NavBar home={home} about={about} projects={projects} contact={contact} scrollToSection={scrollToSection}/>
+      <HeroSection home={home} projects={projects} scrollToSection={scrollToSection}/>
       <AboutSection about={about}/>
       <ProjectSection projects={projects}/>
       <ContactSection contact={contact}/>

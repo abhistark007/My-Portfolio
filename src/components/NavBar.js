@@ -6,12 +6,7 @@ function NavBar(props) {
 
     
 
-    const scrollToSection=(elementRef)=>{
-        window.scrollTo({
-            top: elementRef.current.offsetTop,
-            behavior: 'smooth'
-        })
-    }
+   
 
 
   return (
@@ -27,14 +22,14 @@ function NavBar(props) {
 
             {/* Right */}
             <div className='flex font-[700]  text-[18px] leading-[27px] tracking-[1px] gap-10 select-none max-[700px]:hidden'>
-                <div onClick={()=>scrollToSection(props.home)} className='hover:text-[#7843E9] duration-200 cursor-pointer'>HOME</div>
-                <div onClick={()=>scrollToSection(props.about)} className='hover:text-[#7843E9] duration-200 cursor-pointer'>ABOUT</div>
-                <div onClick={()=>scrollToSection(props.projects)}  className='hover:text-[#7843E9] duration-200 cursor-pointer'>PROJECT</div>
-                <div onClick={()=>scrollToSection(props.contact)} className='hover:text-[#7843E9] duration-200 cursor-pointer'>CONTACT</div>
+                <div onClick={()=>props.scrollToSection(props.home)} className='hover:text-[#7843E9] duration-200 cursor-pointer'>HOME</div>
+                <div onClick={()=>props.scrollToSection(props.about)} className='hover:text-[#7843E9] duration-200 cursor-pointer'>ABOUT</div>
+                <div onClick={()=>props.scrollToSection(props.projects)}  className='hover:text-[#7843E9] duration-200 cursor-pointer'>PROJECT</div>
+                <div onClick={()=>props.scrollToSection(props.contact)} className='hover:text-[#7843E9] duration-200 cursor-pointer'>CONTACT</div>
             </div>
 
             {/* Right on small screen */}
-            <div className='flex items-center justify-center text-3xl min-[700px]:hidden cursor-pointer'>
+            <div  className='flex items-center justify-center text-3xl min-[700px]:hidden cursor-pointer'>
                 <i class='bx bx-menu'></i>
             </div>
 

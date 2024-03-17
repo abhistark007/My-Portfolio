@@ -23,7 +23,8 @@ function HeroSection(props) {
                      A Result-Oriented Front-End Web Developer who likes building pixel perfect design and <br /> 
                      Web Applications that leads to the success of the overall product
                 </div>
-                <div className='px-8 py-3 shadow-lg hover:translate-y-[-7px] cursor-pointer rounded-lg bg-[#7843E9] duration-300 text-white w-fit text-[20px] leading-[30px] uppercase tracking-[1px] font-bold'>Projects</div>
+                <div onClick={()=>props.scrollToSection(props.projects)}
+                 className='px-8 py-3 shadow-lg hover:translate-y-[-7px] cursor-pointer rounded-lg bg-[#7843E9] duration-300 text-white w-fit text-[20px] leading-[30px] uppercase tracking-[1px] font-bold'>Projects</div>
             </div>
 
 
