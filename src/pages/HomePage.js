@@ -1,8 +1,11 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div className='relative flex flex-col w-full'>
+      <NavBar/>
+    </div>
   )
 }
 

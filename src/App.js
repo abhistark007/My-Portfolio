@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App bg-red-600">
+    <div className="App ">
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='*' element={<ErrorPage/>}/>
