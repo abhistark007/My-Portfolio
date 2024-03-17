@@ -2,12 +2,12 @@ import React from 'react'
 
 function ProjectCard(props) {
   return (
-    <div className='flex justify-between items-center my-5 gap-36'>
+    <div className='flex justify-between items-center my-5 gap-36 max-[1000px]:flex-col max-[1000px]:gap-5'>
         {/* left */}
-        <img src={props.img} alt="" className='flex-[0.5] w-[40%]  rounded-lg border-2 border-purple-600 shadow-lg '/>
+        <img src={props.img} alt="" className='flex-[0.5] w-[40%] max-[1000px]:w-[80%] rounded-lg border-2 border-purple-600 shadow-lg '/>
 
         {/* right */}
-        <div className='flex flex-col justify-evenly h-full flex-[0.5]'>
+        <div className='flex flex-col justify-evenly h-full flex-[0.5] max-[1000px]:items-center max-[1000px]:gap-4'>
             <div className='font-[700] text-[28px] leading-[42px] '>{props.name}</div>
 
             <div className='text-[#666666] leading-[30px] text-[18px]'>{props.des}</div>
