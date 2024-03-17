@@ -10,10 +10,10 @@ function HeroSection(props) {
         }}>
             <div className='flex flex-col absolute left-0 top-[40%] bg-white z-10 shadow-lg p-1'>
                 <div className='flex justify-center items-center cursor-pointer hover:bg-[#7843E9] duration-200 w-full h-full p-2'>
-                    <img src={LinkedIn} alt="Linked In" className='w-[47.2px] h-[27.2px]' />
+                    <a href="https://www.linkedin.com/in/abhi-kumar-bb84851b1/" target='_blank'><img  src={LinkedIn} alt="Linked In" className='w-[47.2px] h-[27.2px]' /></a>
                 </div>
                 <div className='flex justify-center items-center cursor-pointer hover:bg-[#7843E9] duration-200 p-2'>
-                    <img src={Github} alt="Github" className='w-[47.2px] h-[27.2px]' />
+                    <a href="https://github.com/abhistark007" target='_blank'><img src={Github} alt="Github" className='w-[47.2px] h-[27.2px]' /></a>
                 </div>
             </div>
 
